@@ -3,8 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #e5e5e5;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #headerWrap, #footerWrap {
+            width: 100%;
+        }
+
+        #headerWrap {
+            height: 50px;
+            background-color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #headerBox{
+            width: 1400px;
+            height: 100%;
+            margin: auto;
+        }
+        #logoWrap{
+            width: 200px;
+            height: 100%;
+            background-color: #000;
+            float: left;
+        }
+        #searchWrap {
+            float: right;
+            width: 600px;
+            height: 50px;
+            background-color: rgba(0%,0%,0%,0.3);
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        #searchWrap input {
+            margin-top: 5px;
+            width: 500px;
+            height: 40px;
+            border: none;
+            outline: none;
+            text-indent: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: transparent;
+        }
+
+        #searchWrap i {
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        #contentWrap {
+            width: 1400px;
+            height: 1000px;
+            margin: auto;
+            background-color: #00f;
+        }
+
+        #footerWrap {
+            height: 30px;
+            background-color: #ff0;
+        }
+
+
+    </style>
 </head>
 <body>
+
+<div id="headerWrap">
+    <div id="headerBox">
+
+        <div id="logoWrap"></div><!--//logoWrap end-->
+        <div id="searchWrap">
+            <input id="title" placeholder="Search Title ..."/>
+            <label for="title">
+                <i class="fas fa-search"></i>
+            </label>
+        </div><!--//searchWrap end-->
+
+    </div><!--//header box end-->
+</div><!--//header end-->
+
+<div id="contentWrap">
+
+</div><!--//contents end-->
+
+<div id="footerWrap">
+
+</div><!--//footer end-->
 
 </body>
 </html>
